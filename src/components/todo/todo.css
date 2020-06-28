@@ -1,0 +1,65 @@
+#to-do-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+#to-do-form input {
+    width: calc(100% - 65px);
+    border: none;
+    color: #2e3641;
+    padding: 0 15px;
+    outline: none;
+    border-bottom: 2px solid #2e3641;
+    transition: all .3s ease;
+}
+#to-do-form input:focus {
+    border-bottom: 2px solid #f97e76;
+}
+#to-do-form button {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #2e3641;
+    transition: all .3s ease;
+}
+#to-do-form button:hover {
+    color: #f97e76;
+}
+#to-do-form button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 35px;
+}
+.todo-item:first-child {
+    margin-top: 35px;
+}
+.todo-item span {
+    padding: 0 9.5px;
+}
+.todo-item span:hover {
+    color: #f97e76;
+    cursor: pointer;
+}
+.todo-item input {
+    width: calc(100% - 65px);
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.todo-item input:focus {
+    color: #f97e76;
+}

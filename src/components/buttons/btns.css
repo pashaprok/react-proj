@@ -1,0 +1,50 @@
+/* --- btn fluid --- */
+.btn-fluid.half {
+    width: 50%;
+  }
+  .btn-fluid {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--mainWhite);
+    border: none;
+    color: var(--mainDark);
+    transition: var(--transitionDefault);
+    font-size: 20px;
+    outline: none;
+  }
+  .btn-fluid i {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .btn-fluid:hover i {
+    opacity: 1;
+  }
+  .btn-fluid:hover {
+    color: var(--mainWhite);
+    background-color: var(--mainSecondLight);
+  }
+  .btn-fluid:active {
+    color: var(--mainWhite);
+    background-color: var(--mainDark);
+  }
+
+
+/* --- btn dark --- */
+.btn-dark {
+  font-weight: 700;
+  margin-top: 15px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: var(--mainDark);
+  transition: var(--transitionDefault);
+  color: var(--mainWhite);
+}
+.btn-dark:hover {
+  text-decoration: none;
+  background-color: var(--mainBright);
+}

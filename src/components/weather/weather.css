@@ -1,0 +1,123 @@
+.weather-app {
+    color: #2e3641;
+}
+#weather-form {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 15px 0 7px 0;
+}
+#weather-form input {
+    font-size: 20px;
+    border: none;
+    color: #2e3641;
+    padding: 0 15px;
+    outline: none;
+    border-bottom: 2px solid #2e3641;
+    transition: all .3s ease;
+}
+#weather-form input:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #f97e76;
+}
+#weather-form .city {
+    width: calc(100% - 280px);
+    text-transform: capitalize;
+}
+#weather-form .country {
+    width: 100px;
+    text-transform: uppercase;
+}
+#weather-form .city::placeholder,
+#weather-form .country::placeholder {
+    text-transform: lowercase;
+}
+#weather-form button {
+    font-weight: 700;
+    width: 140px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #2e3641;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+#weather-form button:hover {
+    color: #f97e76;
+}
+.info-button__wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.info-button {
+    color: #2e3641;
+    background-color: transparent;
+    transition: all .3s ease;
+    font-size: 20px;
+}
+.info-button:hover {
+    text-decoration: none;
+    color: #f97e76;
+}
+.show-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.show-weather {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.weather-info {
+    font-weight: 600;
+}
+.weather-info__desc {
+    font-weight: 300;
+}
+.weather-city {
+    font-size: 42px;
+    font-weight: 700;
+}
+.weather-desc {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.more-btn__wrapper {
+    width: 137px;
+    text-align: center;
+}
+.more-btn {
+    color: #2e3641;
+    transition: all .3s ease;
+    font-size: 20px;
+}
+.more-btn:hover {
+    text-decoration: none;
+    color: #f97e76;
+}
+
+@media only screen and (max-width : 768px) {
+    .show-weather {
+        display: flex;
+        flex-direction: column;
+    }
+    .more-btn__wrapper {
+        margin-top: 15px;
+        text-align: left;
+    }
+    #weather-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #weather-form .city,
+    #weather-form .country,
+    #weather-form button {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
